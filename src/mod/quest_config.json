@@ -1,0 +1,55 @@
+{
+  "_comment": [
+    "quest_config.json — quest pool definitions for Daily, Advance, Special, Monthly.",
+    "Format per quest:",
+    "  id          : unique identifier (snake_case)",
+    "  type        : Normal | Advance | Special | Monthly",
+    "  category    : Kill | Collect",
+    "  target_id   : entity ID (minecraft:zombie) or item ID (minecraft:wheat)",
+    "  target      : amount required",
+    "  reward_sd   : SheldDust reward (Normal/Advance/Special)",
+    "  reward_zi   : Zen Ingot reward (Monthly)",
+    "  display     : UI display text"
+  ],
+
+  "normal_pool": [
+    { "id": "kill_zombie_10",   "type": "Normal", "category": "Kill",    "target_id": "minecraft:zombie",   "target": 10, "reward_sd": 15, "display": "Kill 10 Zombies   " },
+    { "id": "kill_skeleton_10", "type": "Normal", "category": "Kill",    "target_id": "minecraft:skeleton", "target": 10, "reward_sd": 15, "display": "Kill 10 Skeletons " },
+    { "id": "kill_creeper_10",  "type": "Normal", "category": "Kill",    "target_id": "minecraft:creeper",  "target": 10, "reward_sd": 15, "display": "Kill 10 Creepers  " },
+    { "id": "kill_spider_10",   "type": "Normal", "category": "Kill",    "target_id": "minecraft:spider",   "target": 10, "reward_sd": 15, "display": "Kill 10 Spiders   " },
+    { "id": "kill_drowned_10",  "type": "Normal", "category": "Kill",    "target_id": "minecraft:drowned",  "target": 10, "reward_sd": 15, "display": "Kill 10 Drowned   " },
+
+    { "id": "collect_wheat_48",  "type": "Normal", "category": "Collect", "target_id": "minecraft:wheat",  "target": 48, "reward_sd": 15, "display": "Submit 48 Wheat   " },
+    { "id": "collect_carrot_48", "type": "Normal", "category": "Collect", "target_id": "minecraft:carrot", "target": 48, "reward_sd": 15, "display": "Submit 48 Carrots " },
+    { "id": "collect_potato_48", "type": "Normal", "category": "Collect", "target_id": "minecraft:potato", "target": 48, "reward_sd": 15, "display": "Submit 48 Potatoes" },
+    { "id": "collect_coal_32",   "type": "Normal", "category": "Collect", "target_id": "minecraft:coal",   "target": 32, "reward_sd": 15, "display": "Submit 32 Coal    " }
+  ],
+
+  "advance_pool": [
+    { "id": "kill_pillager_6",   "type": "Advance", "category": "Kill",    "target_id": "minecraft:pillager",   "target": 6,  "reward_sd": 25, "display": "Kill 6 Pillagers  " },
+    { "id": "kill_vindicator_5", "type": "Advance", "category": "Kill",    "target_id": "minecraft:vindicator", "target": 5,  "reward_sd": 25, "display": "Kill 5 Vindicators" },
+    { "id": "kill_blaze_12",     "type": "Advance", "category": "Kill",    "target_id": "minecraft:blaze",      "target": 12, "reward_sd": 25, "display": "Kill 12 Blazes    " },
+    { "id": "kill_ghast_3",      "type": "Advance", "category": "Kill",    "target_id": "minecraft:ghast",      "target": 3,  "reward_sd": 25, "display": "Kill 3 Ghasts     " },
+
+    { "id": "collect_bamboo_32", "type": "Advance", "category": "Collect", "target_id": "minecraft:bamboo",       "target": 32, "reward_sd": 25, "display": "Submit 32 Bamboo  " },
+    { "id": "collect_lapis_32",  "type": "Advance", "category": "Collect", "target_id": "minecraft:lapis_lazuli", "target": 32, "reward_sd": 25, "display": "Submit 32 Lazuli  " },
+    { "id": "collect_emerald_12","type": "Advance", "category": "Collect", "target_id": "minecraft:emerald",      "target": 12, "reward_sd": 25, "display": "Submit 12 Emeralds" }
+  ],                                                                                                                                                        
+
+  "special_pool": [
+    { "id": "kill_piglin_brute_5", "type": "Special", "category": "Kill", "target_id": "minecraft:piglin_brute", "target": 5, "reward_sd": 40, "display": "Kill 5 PiglinBrute" },
+    { "id": "kill_ravager_1",      "type": "Special", "category": "Kill", "target_id": "minecraft:ravager",      "target": 1, "reward_sd": 40, "display": "Kill 1 Ravager    " }
+  ],
+
+  "monthly_pool": [
+    { "id": "kill_warden_1", "type": "Monthly", "category": "Kill", "target_id": "minecraft:warden", "target": 1, "reward_zi": 10, "display": "Kill 1 Warden     " },
+    { "id": "kill_wither_2", "type": "Monthly", "category": "Kill", "target_id": "minecraft:wither", "target": 2, "reward_zi": 10, "display": "Kill 2 Withers    " }
+  ],
+
+  "generation_rules": {
+    "_comment": "Daily quest generation rules per player",
+    "normal_count": 2,
+    "advance_chance": 0.35,
+    "special_chance": 0.07
+  }
+}

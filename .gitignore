@@ -1,0 +1,6 @@
+# Claude Code session config (local only)
+/.claude/
+# Server data backup / .old files (optional)
+*.json.old
+*.cpp.obj.d
+*.cpp.obj

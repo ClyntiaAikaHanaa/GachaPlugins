@@ -1,0 +1,28 @@
+{
+    target_type = {
+        showmenu = true,
+        values = {
+            "server",
+            "client"
+        },
+        __scriptdir = [[D:\GachaPlugin]],
+        default = "server",
+        __sourceinfo_showmenu = { },
+        __sourceinfo_values = {
+            client = {
+                line = 8,
+                file = [[.\xmake.lua]]
+            },
+            server = {
+                line = 8,
+                file = [[.\xmake.lua]]
+            }
+        },
+        __sourceinfo_default = {
+            server = {
+                line = 6,
+                file = [[.\xmake.lua]]
+            }
+        }
+    }
+}

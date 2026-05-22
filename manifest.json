@@ -1,0 +1,7 @@
+{
+    "name": "GachaPlugin",
+    "entry": "${modFile}",
+    "version": "${modVersion}",
+    "type": "native",
+    "platform": "${modPlatform}"
+}

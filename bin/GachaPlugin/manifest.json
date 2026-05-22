@@ -1,0 +1,7 @@
+{
+    "name": "GachaPlugin",
+    "entry": "GachaPlugin.dll",
+    "version": "0.0.0",
+    "type": "native",
+    "platform": "server"
+}

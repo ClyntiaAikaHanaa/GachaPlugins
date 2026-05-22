@@ -1,0 +1,813 @@
+{
+  "_schema_version": 3,
+  "_comment": [
+    "gacha_pool_v3.json — Extended schema dengan structured enchantments.",
+    "Perbedaan dari v1/v2:",
+    "  'id'   → 'item_id'       : nama field lebih eksplisit",
+    "  'nbt'  → 'enchantments'  : array terstruktur, bukan raw NBT string",
+    "  'name' → tetap ada       : teks yang tampil di form UI",
+    "  'display_name' BARU      : nama berwarna yang muncul di atas item in-game (opsional)",
+    "  'weight' BARU            : bobot relatif dalam pool (default 1 jika tidak ada)",
+    "  'count'  → tetap ada     : jumlah item yang diberikan",
+    "",
+    "Format enchantments: { 'id': 'minecraft:enchant_name', 'level': N }",
+    "C++ akan membaca array ini dan apply ke ItemStack via EnchantUtils atau CompoundTag."
+  ],
+
+  "b5_rate_on": {
+    "1": [
+      {
+        "item_id": "minecraft:netherite_sword",
+        "name": "Netherite Sword [Sharpness X]",
+        "display_name": "§6⚔ §lBlade of Aether §r§c[Sharpness X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:sharpness", "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_sword",
+        "name": "Netherite Sword [Fire Aspect X]",
+        "display_name": "§6⚔ §lInferno Edge §r§4[Fire Aspect X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:fire_aspect", "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_sword",
+        "name": "Netherite Sword [Looting X]",
+        "display_name": "§6⚔ §lGreed Fang §r§a[Looting X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:looting", "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_sword",
+        "name": "Netherite Sword [Knockback X]",
+        "display_name": "§6⚔ §lTempest Blade §r§9[Knockback X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:knockback", "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:mace",
+        "name": "Mace (Base Weapon)",
+        "display_name": "§6🔨 §lAncient Mace",
+        "count": 1, "weight": 1,
+        "enchantments": []
+      },
+      {
+        "item_id": "minecraft:nether_star",
+        "name": "Nether Star",
+        "display_name": "§6✦ §lNether Star",
+        "count": 1, "weight": 1,
+        "enchantments": []
+      }
+    ],
+    "2": [
+      {
+        "item_id": "minecraft:netherite_helmet",
+        "name": "Netherite Helmet [Protection X]",
+        "display_name": "§6🪖 §lCrown of the Warden §r§b[Protection X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection", "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_helmet",
+        "name": "Netherite Helmet [Thorns VI]",
+        "display_name": "§6🪖 §lThorn Crown §r§c[Thorns VI]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:thorns", "level": 6 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_chestplate",
+        "name": "Netherite Chestplate [Protection X]",
+        "display_name": "§6🛡 §lBastion Plate §r§b[Protection X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection", "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_chestplate",
+        "name": "Netherite Chestplate [Thorns VI]",
+        "display_name": "§6🛡 §lSpike Mantle §r§c[Thorns VI]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:thorns", "level": 6 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_leggings",
+        "name": "Netherite Leggings [Protection X]",
+        "display_name": "§6🛡 §lIron Will Greaves §r§b[Protection X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection", "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_leggings",
+        "name": "Netherite Leggings [Thorns VI]",
+        "display_name": "§6🛡 §lReactive Greaves §r§c[Thorns VI]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:thorns", "level": 6 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_boots",
+        "name": "Netherite Boots [Protection X]",
+        "display_name": "§6🥾 §lFortress Treads §r§b[Protection X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection", "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_boots",
+        "name": "Netherite Boots [Thorns VI]",
+        "display_name": "§6🥾 §lSpike Treads §r§c[Thorns VI]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:thorns", "level": 6 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_boots",
+        "name": "Netherite Boots [Feather Falling X]",
+        "display_name": "§6🥾 §lCloud Walker §r§e[Feather Falling X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:feather_falling", "level": 10 }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "item_id": "minecraft:bow",
+        "name": "Bow [Power X + Infinity]",
+        "display_name": "§6🏹 §lGodbow §r§c[Power X] §7+ §f[Infinity]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:power",    "level": 10 },
+          { "id": "minecraft:infinity", "level": 1  }
+        ]
+      },
+      {
+        "item_id": "minecraft:bow",
+        "name": "Bow [Power X + Flame]",
+        "display_name": "§6🏹 §lPhoenix Bow §r§c[Power X] §7+ §4[Flame]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:power", "level": 10 },
+          { "id": "minecraft:flame", "level": 1  }
+        ]
+      },
+      {
+        "item_id": "minecraft:bow",
+        "name": "Bow [Infinity + Mending]",
+        "display_name": "§6🏹 §lEverquiver §r§f[Infinity] §7+ §a[Mending]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:infinity", "level": 1 },
+          { "id": "minecraft:mending",  "level": 1 }
+        ]
+      },
+      {
+        "item_id": "minecraft:crossbow",
+        "name": "Crossbow [Multishot + Quick Charge V + Piercing IV]",
+        "display_name": "§6🏹 §lStorm Crossbow §r§a[Multishot] §7+ §e[Quick Charge V] §7+ §b[Piercing IV]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:multishot",    "level": 1 },
+          { "id": "minecraft:quick_charge", "level": 5 },
+          { "id": "minecraft:piercing",     "level": 4 }
+        ]
+      },
+      {
+        "item_id": "minecraft:trident",
+        "name": "Trident [Riptide X + Impaling V]",
+        "display_name": "§6🔱 §lTide Piercer §r§3[Riptide X] §7+ §b[Impaling V]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:riptide",  "level": 10 },
+          { "id": "minecraft:impaling", "level": 5  }
+        ]
+      },
+      {
+        "item_id": "minecraft:trident",
+        "name": "Trident [Channeling + Loyalty XV]",
+        "display_name": "§6🔱 §lStorm Herald §r§e[Channeling] §7+ §b[Loyalty XV]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:channeling", "level": 1  },
+          { "id": "minecraft:loyalty",    "level": 15 }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "item_id": "minecraft:netherite_pickaxe",
+        "name": "Netherite Pickaxe [Efficiency X + Fortune X]",
+        "display_name": "§6⛏ §lAuric Drill §r§e[Efficiency X] §7+ §6[Fortune X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:efficiency", "level": 10 },
+          { "id": "minecraft:fortune",    "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_axe",
+        "name": "Netherite Axe [Efficiency X + Sharpness X]",
+        "display_name": "§6🪓 §lWarsplitter §r§e[Efficiency X] §7+ §c[Sharpness X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:efficiency", "level": 10 },
+          { "id": "minecraft:sharpness",  "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:netherite_shovel",
+        "name": "Netherite Shovel [Efficiency X + Fortune X]",
+        "display_name": "§6🪣 §lEarth Carver §r§e[Efficiency X] §7+ §6[Fortune X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:efficiency", "level": 10 },
+          { "id": "minecraft:fortune",    "level": 10 }
+        ]
+      },
+      {
+        "item_id": "minecraft:fishing_rod",
+        "name": "Fishing Rod [Luck of the Sea X + Lure X]",
+        "display_name": "§6🎣 §lNeptune's Line §r§b[Luck X] §7+ §3[Lure X]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:luck_of_the_sea", "level": 10 },
+          { "id": "minecraft:lure",            "level": 10 }
+        ]
+      }
+    ]
+  },
+
+  "b4_rate_on": {
+    "1": [
+      {
+        "item_id": "minecraft:diamond_sword",
+        "name": "Diamond Sword [Sharpness V + Fire Aspect II]",
+        "display_name": "§b⚔ §lCinder Blade §r§c[Sharpness V + Fire Aspect II]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:sharpness",   "level": 5 },
+          { "id": "minecraft:fire_aspect", "level": 2 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_sword",
+        "name": "Diamond Sword [Sharpness V + Knockback II]",
+        "display_name": "§b⚔ §lShockwave Blade §r§9[Sharpness V + Knockback II]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:sharpness",  "level": 5 },
+          { "id": "minecraft:knockback",  "level": 2 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_chestplate",
+        "name": "Diamond Chestplate [Protection IV + Unbreaking III]",
+        "display_name": "§b🛡 §lSapphire Plate §r§b[Protection IV + Unbreaking III]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection", "level": 4 },
+          { "id": "minecraft:unbreaking", "level": 3 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_helmet",
+        "name": "Diamond Helmet [Protection IV + Respiration III]",
+        "display_name": "§b🪖 §lDeep Sea Crown §r§3[Protection IV + Respiration III]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection",  "level": 4 },
+          { "id": "minecraft:respiration", "level": 3 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_leggings",
+        "name": "Diamond Leggings [Protection IV + Unbreaking III]",
+        "display_name": "§b🛡 §lSapphire Greaves §r§b[Protection IV + Unbreaking III]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection", "level": 4 },
+          { "id": "minecraft:unbreaking", "level": 3 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_boots",
+        "name": "Diamond Boots [Protection IV + Feather Falling IV]",
+        "display_name": "§b🥾 §lSky Treads §r§e[Protection IV + Feather Falling IV]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection",    "level": 4 },
+          { "id": "minecraft:feather_falling","level": 4 }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "item_id": "minecraft:diamond_sword",
+        "name": "Diamond Sword [Sharpness V + Fire Aspect II]",
+        "display_name": "§b⚔ §lCinder Blade §r§c[Sharpness V + Fire Aspect II]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:sharpness",   "level": 5 },
+          { "id": "minecraft:fire_aspect", "level": 2 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_sword",
+        "name": "Diamond Sword [Sharpness V + Knockback II]",
+        "display_name": "§b⚔ §lShockwave Blade §r§9[Sharpness V + Knockback II]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:sharpness",  "level": 5 },
+          { "id": "minecraft:knockback",  "level": 2 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_chestplate",
+        "name": "Diamond Chestplate [Protection IV + Unbreaking III]",
+        "display_name": "§b🛡 §lSapphire Plate §r§b[Protection IV + Unbreaking III]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection", "level": 4 },
+          { "id": "minecraft:unbreaking", "level": 3 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_helmet",
+        "name": "Diamond Helmet [Protection IV + Respiration III]",
+        "display_name": "§b🪖 §lDeep Sea Crown §r§3[Protection IV + Respiration III]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection",  "level": 4 },
+          { "id": "minecraft:respiration", "level": 3 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_leggings",
+        "name": "Diamond Leggings [Protection IV + Unbreaking III]",
+        "display_name": "§b🛡 §lSapphire Greaves §r§b[Protection IV + Unbreaking III]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection", "level": 4 },
+          { "id": "minecraft:unbreaking", "level": 3 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_boots",
+        "name": "Diamond Boots [Protection IV + Feather Falling IV]",
+        "display_name": "§b🥾 §lSky Treads §r§e[Protection IV + Feather Falling IV]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:protection",     "level": 4 },
+          { "id": "minecraft:feather_falling","level": 4 }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "item_id": "minecraft:diamond_pickaxe",
+        "name": "Diamond Pickaxe [Efficiency V + Fortune III]",
+        "display_name": "§b⛏ §lLode Drill §r§e[Efficiency V + Fortune III]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:efficiency", "level": 5 },
+          { "id": "minecraft:fortune",    "level": 3 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_axe",
+        "name": "Diamond Axe [Efficiency V + Sharpness V]",
+        "display_name": "§b🪓 §lCleaver §r§e[Efficiency V] §7+ §c[Sharpness V]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:efficiency", "level": 5 },
+          { "id": "minecraft:sharpness",  "level": 5 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_pickaxe",
+        "name": "Diamond Pickaxe [Efficiency V + Silk Touch I]",
+        "display_name": "§b⛏ §lCrystal Drill §r§e[Efficiency V + Silk Touch]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:efficiency",  "level": 5 },
+          { "id": "minecraft:silk_touch",  "level": 1 }
+        ]
+      },
+      {
+        "item_id": "minecraft:bow",
+        "name": "Bow [Power V + Punch II + Flame I]",
+        "display_name": "§b🏹 §lBlazeshot §r§c[Power V] §7+ §4[Flame I]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:power", "level": 5 },
+          { "id": "minecraft:punch", "level": 2 },
+          { "id": "minecraft:flame", "level": 1 }
+        ]
+      },
+      {
+        "item_id": "minecraft:enchanted_book",
+        "name": "Enchanted Book [Mending I]",
+        "display_name": "§b📖 §lTome of Mending",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:mending", "level": 1 }
+        ]
+      },
+      {
+        "item_id": "minecraft:enchanted_book",
+        "name": "Enchanted Book [Fortune III]",
+        "display_name": "§b📖 §lTome of Fortune",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:fortune", "level": 3 }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "item_id": "minecraft:diamond_pickaxe",
+        "name": "Diamond Pickaxe [Efficiency V + Fortune III]",
+        "display_name": "§b⛏ §lLode Drill §r§e[Efficiency V + Fortune III]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:efficiency", "level": 5 },
+          { "id": "minecraft:fortune",    "level": 3 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_axe",
+        "name": "Diamond Axe [Efficiency V + Sharpness V]",
+        "display_name": "§b🪓 §lCleaver §r§e[Efficiency V] §7+ §c[Sharpness V]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:efficiency", "level": 5 },
+          { "id": "minecraft:sharpness",  "level": 5 }
+        ]
+      },
+      {
+        "item_id": "minecraft:diamond_pickaxe",
+        "name": "Diamond Pickaxe [Efficiency V + Silk Touch I]",
+        "display_name": "§b⛏ §lCrystal Drill §r§e[Efficiency V + Silk Touch]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:efficiency", "level": 5 },
+          { "id": "minecraft:silk_touch", "level": 1 }
+        ]
+      },
+      {
+        "item_id": "minecraft:bow",
+        "name": "Bow [Power V + Punch II + Flame I]",
+        "display_name": "§b🏹 §lBlazeshot §r§c[Power V] §7+ §4[Flame I]",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:power", "level": 5 },
+          { "id": "minecraft:punch", "level": 2 },
+          { "id": "minecraft:flame", "level": 1 }
+        ]
+      },
+      {
+        "item_id": "minecraft:enchanted_book",
+        "name": "Enchanted Book [Mending I]",
+        "display_name": "§b📖 §lTome of Mending",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:mending", "level": 1 }
+        ]
+      },
+      {
+        "item_id": "minecraft:enchanted_book",
+        "name": "Enchanted Book [Fortune III]",
+        "display_name": "§b📖 §lTome of Fortune",
+        "count": 1, "weight": 1,
+        "enchantments": [
+          { "id": "minecraft:fortune", "level": 3 }
+        ]
+      }
+    ]
+  },
+
+  "b5_standard": [
+    {
+      "item_id": "minecraft:netherite_sword",
+      "name": "Netherite Sword [Sharpness V + Looting III + Unbreaking III + Mending I]",
+      "display_name": "§6⚔ §lEternal Blade §r§f[Sharpness V · Looting III · Mending]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:sharpness",  "level": 5 },
+        { "id": "minecraft:looting",    "level": 3 },
+        { "id": "minecraft:unbreaking", "level": 3 },
+        { "id": "minecraft:mending",    "level": 1 }
+      ]
+    },
+    {
+      "item_id": "minecraft:netherite_sword",
+      "name": "Netherite Sword [Sharpness V + Fire Aspect II + Looting III + Mending I]",
+      "display_name": "§6⚔ §lPyrecleft §r§f[Sharpness V · Fire Aspect II · Mending]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:sharpness",   "level": 5 },
+        { "id": "minecraft:fire_aspect", "level": 2 },
+        { "id": "minecraft:looting",     "level": 3 },
+        { "id": "minecraft:mending",     "level": 1 }
+      ]
+    },
+    {
+      "item_id": "minecraft:netherite_axe",
+      "name": "Netherite Axe [Sharpness V + Efficiency V + Unbreaking III + Mending I]",
+      "display_name": "§6🪓 §lRavager's Axe §r§f[Sharpness V · Efficiency V · Mending]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:sharpness",  "level": 5 },
+        { "id": "minecraft:efficiency", "level": 5 },
+        { "id": "minecraft:unbreaking", "level": 3 },
+        { "id": "minecraft:mending",    "level": 1 }
+      ]
+    },
+    {
+      "item_id": "minecraft:netherite_pickaxe",
+      "name": "Netherite Pickaxe [Efficiency V + Fortune III + Unbreaking III + Mending I]",
+      "display_name": "§6⛏ §lVaultbreaker §r§f[Efficiency V · Fortune III · Mending]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:efficiency", "level": 5 },
+        { "id": "minecraft:fortune",    "level": 3 },
+        { "id": "minecraft:unbreaking", "level": 3 },
+        { "id": "minecraft:mending",    "level": 1 }
+      ]
+    },
+    {
+      "item_id": "minecraft:netherite_helmet",
+      "name": "Netherite Helmet [Protection IV + Respiration III + Aqua Affinity I + Mending I]",
+      "display_name": "§6🪖 §lAbyss Crown §r§f[Protection IV · Respiration III · Mending]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:protection",   "level": 4 },
+        { "id": "minecraft:respiration",  "level": 3 },
+        { "id": "minecraft:aqua_affinity","level": 1 },
+        { "id": "minecraft:mending",      "level": 1 }
+      ]
+    },
+    {
+      "item_id": "minecraft:netherite_chestplate",
+      "name": "Netherite Chestplate [Protection IV + Unbreaking III + Mending I]",
+      "display_name": "§6🛡 §lHeart of the Fortress §r§f[Protection IV · Mending]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:protection", "level": 4 },
+        { "id": "minecraft:unbreaking", "level": 3 },
+        { "id": "minecraft:mending",    "level": 1 }
+      ]
+    },
+    {
+      "item_id": "minecraft:netherite_leggings",
+      "name": "Netherite Leggings [Protection IV + Swift Sneak III + Unbreaking III + Mending I]",
+      "display_name": "§6🛡 §lShadow Greaves §r§f[Protection IV · Swift Sneak III · Mending]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:protection",  "level": 4 },
+        { "id": "minecraft:swift_sneak", "level": 3 },
+        { "id": "minecraft:unbreaking",  "level": 3 },
+        { "id": "minecraft:mending",     "level": 1 }
+      ]
+    },
+    {
+      "item_id": "minecraft:netherite_boots",
+      "name": "Netherite Boots [Protection IV + Feather Falling IV + Depth Strider III + Mending I]",
+      "display_name": "§6🥾 §lTempest Walkers §r§f[Protection IV · Feather Falling IV · Mending]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:protection",     "level": 4 },
+        { "id": "minecraft:feather_falling","level": 4 },
+        { "id": "minecraft:depth_strider",  "level": 3 },
+        { "id": "minecraft:mending",        "level": 1 }
+      ]
+    },
+    {
+      "item_id": "minecraft:elytra",
+      "name": "Elytra [Unbreaking III + Mending I]",
+      "display_name": "§6🪽 §lWings of Aetheria §r§f[Unbreaking III · Mending]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:unbreaking", "level": 3 },
+        { "id": "minecraft:mending",    "level": 1 }
+      ]
+    },
+    {
+      "item_id": "minecraft:totem_of_undying",
+      "name": "3x Totem of Undying",
+      "display_name": "§6✦ §lTotem of Undying ×3",
+      "count": 3, "weight": 1,
+      "enchantments": []
+    },
+    {
+      "item_id": "minecraft:trident",
+      "name": "Trident [Loyalty III + Channeling I + Unbreaking III + Mending I]",
+      "display_name": "§6🔱 §lSpear of Poseidon §r§f[Loyalty III · Channeling I · Mending]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:loyalty",    "level": 3 },
+        { "id": "minecraft:channeling", "level": 1 },
+        { "id": "minecraft:unbreaking", "level": 3 },
+        { "id": "minecraft:mending",    "level": 1 }
+      ]
+    }
+  ],
+
+  "b4_standard": [
+    {
+      "item_id": "minecraft:iron_sword",
+      "name": "Iron Sword [Sharpness IV]",
+      "display_name": "§5⚔ §lIron Resolve §r§f[Sharpness IV]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:sharpness", "level": 4 }
+      ]
+    },
+    {
+      "item_id": "minecraft:iron_chestplate",
+      "name": "Iron Chestplate [Protection III]",
+      "display_name": "§5🛡 §lSteelguard §r§f[Protection III]",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:protection", "level": 3 }
+      ]
+    },
+    {
+      "item_id": "minecraft:enchanted_book",
+      "name": "Enchanted Book [Looting II]",
+      "display_name": "§5📖 §lTome of Looting II",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:looting", "level": 2 }
+      ]
+    },
+    {
+      "item_id": "minecraft:enchanted_book",
+      "name": "Enchanted Book [Knockback II]",
+      "display_name": "§5📖 §lTome of Knockback II",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:knockback", "level": 2 }
+      ]
+    },
+    {
+      "item_id": "minecraft:enchanted_book",
+      "name": "Enchanted Book [Efficiency IV]",
+      "display_name": "§5📖 §lTome of Efficiency IV",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:efficiency", "level": 4 }
+      ]
+    },
+    {
+      "item_id": "minecraft:enchanted_book",
+      "name": "Enchanted Book [Feather Falling IV]",
+      "display_name": "§5📖 §lTome of Feather Falling IV",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:feather_falling", "level": 4 }
+      ]
+    },
+    {
+      "item_id": "minecraft:enchanted_book",
+      "name": "Enchanted Book [Blast Protection IV]",
+      "display_name": "§5📖 §lTome of Blast Protection IV",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:blast_protection", "level": 4 }
+      ]
+    },
+    {
+      "item_id": "minecraft:enchanted_book",
+      "name": "Enchanted Book [Fire Protection IV]",
+      "display_name": "§5📖 §lTome of Fire Protection IV",
+      "count": 1, "weight": 1,
+      "enchantments": [
+        { "id": "minecraft:fire_protection", "level": 4 }
+      ]
+    }
+  ],
+
+  "b3_pool": [
+    { "item_id": "minecraft:golden_apple",          "name": "6x Golden Apple",              "display_name": "§e✦ §lGolden Apple",                    "count": 6,  "weight": 2, "enchantments": [] },
+    { "item_id": "minecraft:enchanted_golden_apple", "name": "4x Enchanted Golden Apple",    "display_name": "§6✦ §lNotch Apple",                     "count": 4,  "weight": 1, "enchantments": [] },
+    { "item_id": "minecraft:arrow",                 "name": "64x Arrow",                    "display_name": "§7✦ Arrow ×64",                         "count": 64, "weight": 3, "enchantments": [] },
+    { "item_id": "minecraft:ender_pearl",           "name": "16x Ender Pearl",              "display_name": "§5✦ Ender Pearl ×16",                   "count": 16, "weight": 2, "enchantments": [] },
+    { "item_id": "minecraft:blaze_rod",             "name": "16x Blaze Rod",                "display_name": "§6✦ Blaze Rod ×16",                     "count": 16, "weight": 2, "enchantments": [] },
+    { "item_id": "currency:sheld_dust",             "name": "10x SheldDust",                "display_name": "",                                      "count": 10, "weight": 3, "enchantments": [] },
+    { "item_id": "minecraft:iron_ingot",            "name": "64x Iron Ingot",               "display_name": "§7✦ Iron Ingot ×64",                    "count": 64, "weight": 3, "enchantments": [] },
+    { "item_id": "minecraft:gold_ingot",            "name": "32x Gold Ingot",               "display_name": "§6✦ Gold Ingot ×32",                    "count": 32, "weight": 2, "enchantments": [] },
+    { "item_id": "minecraft:diamond",               "name": "16x Diamond",                  "display_name": "§b✦ Diamond ×16",                       "count": 16, "weight": 2, "enchantments": [] },
+    { "item_id": "minecraft:netherite_scrap",       "name": "2x Netherite Scrap",           "display_name": "§8✦ §lNetherite Scrap ×2",              "count": 2,  "weight": 1, "enchantments": [] },
+    { "item_id": "minecraft:cooked_beef",           "name": "64x Cooked Steak",             "display_name": "§c✦ Cooked Steak ×64",                  "count": 64, "weight": 3, "enchantments": [] },
+    { "item_id": "minecraft:potion",        "name": "Potion of Strength II (8:00)", "display_name": "§c🧪 §lPotion of Strength II",        "count": 1, "weight": 2, "enchantments": [], "extra_nbt": "33" },
+    { "item_id": "minecraft:potion",        "name": "Potion of Speed II (8:00)",    "display_name": "§a🧪 §lPotion of Speed II",           "count": 1, "weight": 2, "enchantments": [], "extra_nbt": "16" },
+    { "item_id": "minecraft:potion",        "name": "Potion of Regeneration II",    "display_name": "§d🧪 §lPotion of Regeneration II",    "count": 1, "weight": 2, "enchantments": [], "extra_nbt": "30" },
+    { "item_id": "minecraft:splash_potion", "name": "Splash Potion of Healing II",  "display_name": "§d🧪 §lSplash Potion of Healing II",  "count": 1, "weight": 2, "enchantments": [], "extra_nbt": "22" }
+  ],
+
+  "banner_info": [
+    {
+      "week": 1,
+      "name": "Blade of Nether",
+      "theme": "§7Master the art of the §cNetherite Sword§7 with the strongest enchantments.",
+      "featured_b5": [
+        "Netherite Sword [Sharpness X]",
+        "Netherite Sword [Fire Aspect X]",
+        "Netherite Sword [Looting X]",
+        "Netherite Sword [Knockback X]",
+        "Mace (Base Weapon)",
+        "Nether Star"
+      ],
+      "featured_b4": [
+        "Diamond Sword [Sharpness V + Fire Aspect II]",
+        "Diamond Sword [Sharpness V + Knockback II]",
+        "Diamond Chestplate [Protection IV + Unbreaking III]",
+        "Diamond Helmet [Protection IV + Respiration III]",
+        "Diamond Leggings [Protection IV + Unbreaking III]",
+        "Diamond Boots [Protection IV + Feather Falling IV]"
+      ]
+    },
+    {
+      "week": 2,
+      "name": "Warden's Bastion",
+      "theme": "§7Become a living fortress with §9all-purpose Netherite Armor§7.",
+      "featured_b5": [
+        "Netherite Helmet [Protection X]",
+        "Netherite Helmet [Thorns VI]",
+        "Netherite Chestplate [Protection X]",
+        "Netherite Chestplate [Thorns VI]",
+        "Netherite Leggings [Protection X]",
+        "Netherite Leggings [Thorns VI]",
+        "Netherite Boots [Protection X]",
+        "Netherite Boots [Thorns VI]",
+        "Netherite Boots [Feather Falling X]"
+      ],
+      "featured_b4": [
+        "Diamond Sword [Sharpness V + Fire Aspect II]",
+        "Diamond Chestplate [Protection IV + Unbreaking III]",
+        "Diamond Helmet [Protection IV + Respiration III]",
+        "Diamond Leggings [Protection IV + Unbreaking III]",
+        "Diamond Boots [Protection IV + Feather Falling IV]"
+      ]
+    },
+    {
+      "week": 3,
+      "name": "Hunter's Arsenal",
+      "theme": "§7Dominate at range with §aBow§7, §aCrossbow§7, and §bTrident§7.",
+      "featured_b5": [
+        "Bow [Power X + Infinity]",
+        "Bow [Power X + Flame]",
+        "Bow [Infinity + Mending]",
+        "Crossbow [Multishot + Quick Charge V + Piercing IV]",
+        "Trident [Riptide X + Impaling V]",
+        "Trident [Channeling + Loyalty XV]"
+      ],
+      "featured_b4": [
+        "Diamond Pickaxe [Efficiency V + Fortune III]",
+        "Diamond Axe [Efficiency V + Sharpness V]",
+        "Bow [Power V + Punch II + Flame I]",
+        "Enchanted Book [Mending I]",
+        "Enchanted Book [Fortune III]"
+      ]
+    },
+    {
+      "week": 4,
+      "name": "Tool Grandmaster",
+      "theme": "§7Boost your productivity with godlike §6Netherite Tools§7.",
+      "featured_b5": [
+        "Netherite Pickaxe [Efficiency X + Fortune X]",
+        "Netherite Axe [Efficiency X + Sharpness X]",
+        "Netherite Shovel [Efficiency X + Fortune X]",
+        "Fishing Rod [Luck of the Sea X + Lure X]"
+      ],
+      "featured_b4": [
+        "Diamond Pickaxe [Efficiency V + Fortune III]",
+        "Diamond Axe [Efficiency V + Sharpness V]",
+        "Diamond Pickaxe [Efficiency V + Silk Touch I]",
+        "Enchanted Book [Mending I]",
+        "Enchanted Book [Fortune III]"
+      ]
+    }
+  ]
+}

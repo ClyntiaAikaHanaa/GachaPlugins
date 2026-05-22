@@ -1,0 +1,44 @@
+{
+  "exchanges": [
+    {
+      "id": "diamond_to_sd",
+      "from_currency": "diamond",
+      "from_amount": 10,
+      "to_currency": "sd",
+      "to_amount": 1,
+      "bulk_multiplier": 1,
+      "display_label": "10 Diamond -> 1 SheldDust",
+      "description": "Convert Diamonds from your inventory"
+    },
+    {
+      "id": "sd_to_zi_x1",
+      "from_currency": "sd",
+      "from_amount": 10,
+      "to_currency": "zi",
+      "to_amount": 1,
+      "bulk_multiplier": 1,
+      "display_label": "10 SheldDust -> 1 Zen Ingot",
+      "description": "1 pull worth of Zen Ingot"
+    },
+    {
+      "id": "sd_to_zi_x10",
+      "from_currency": "sd",
+      "from_amount": 10,
+      "to_currency": "zi",
+      "to_amount": 1,
+      "bulk_multiplier": 10,
+      "display_label": "100 SheldDust -> 10 Zen Ingot",
+      "description": "Bulk x10 — 10 pulls at once"
+    },
+    {
+      "id": "sd_to_zi_x100",
+      "from_currency": "sd",
+      "from_amount": 10,
+      "to_currency": "zi",
+      "to_amount": 1,
+      "bulk_multiplier": 100,
+      "display_label": "1000 SheldDust -> 100 Zen Ingot",
+      "description": "Mega bulk x100 — 100 pulls"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+    zig_arch_x64_plat_windows = {
+        __global = true,
+        __checked = false,
+        plat = "windows",
+        arch = "x64"
+    },
+    swift_arch_x64_plat_windows = {
+        __global = true,
+        __checked = true,
+        plat = "windows",
+        arch = "x64"
+    },
+    rust_arch_x64_plat_windows = {
+        __global = true,
+        __checked = true,
+        plat = "windows",
+        arch = "x64"
+    },
+    fpc_arch_x64_plat_windows = {
+        __global = true,
+        __checked = true,
+        plat = "windows",
+        arch = "x64"
+    },
+    tool_target_GachaPlugin_windows_x64_cc = {
+        program = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64\cl.exe]],
+        toolchain_info = {
+            name = "msvc",
+            cachekey = "msvc_arch_x64_plat_windows",
+            plat = "windows",
+            arch = "x64"
+        },
+        toolname = "cl"
+    },
+    tool_target_GachaPlugin_windows_x64_cxx = {
+        program = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64\cl.exe]],
+        toolchain_info = {
+            name = "msvc",
+            cachekey = "msvc_arch_x64_plat_windows",
+            plat = "windows",
+            arch = "x64"
+        },
+        toolname = "cl"
+    },
+    tool_target_GachaPlugin_windows_x64_ld = {
+        program = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64\link.exe]],
+        toolchain_info = {
+            name = "msvc",
+            cachekey = "msvc_arch_x64_plat_windows",
+            plat = "windows",
+            arch = "x64"
+        },
+        toolname = "link"
+    },
+    yasm_arch_x64_plat_windows = {
+        __global = true,
+        __checked = true,
+        plat = "windows",
+        arch = "x64"
+    },
+    go_arch_x64_plat_windows = {
+        __global = true,
+        __checked = true,
+        plat = "windows",
+        arch = "x64"
+    },
+    cuda_arch_x64_plat_windows = {
+        __global = true,
+        __checked = true,
+        plat = "windows",
+        arch = "x64"
+    },
+    tool_target_GachaPlugin_windows_x64_sh = {
+        program = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64\link.exe]],
+        toolchain_info = {
+            name = "msvc",
+            cachekey = "msvc_arch_x64_plat_windows",
+            plat = "windows",
+            arch = "x64"
+        },
+        toolname = "link"
+    },
+    nasm_arch_x64_plat_windows = {
+        __global = true,
+        __checked = true,
+        plat = "windows",
+        arch = "x64"
+    },
+    clang_arch_x64_plat_windows = {
+        __global = true,
+        plat = "windows",
+        arch = "x64"
+    },
+    dotnet_arch_x64_plat_windows = {
+        __checked = true,
+        arch = "x64",
+        __global = true,
+        bindir = [[c:\program files\dotnet]],
+        sdkver = "8.0.100",
+        plat = "windows",
+        sdkdir = [[c:\program files\dotnet\sdk\8.0.100]]
+    },
+    msvc_arch_x64_plat_windows = {
+        plat = "windows",
+        arch = "x64",
+        vcarchs = {
+            "arm",
+            "arm64",
+            "arm64ec",
+            "x64",
+            "x86"
+        },
+        vs_toolset = "14.50.35717",
+        vs = "2026",
+        __checked = "2026",
+        vs_sdkver = "10.0.26100.0",
+        __global = true,
+        vcvars = {
+            VisualStudioVersion = "18.0",
+            VCIDEInstallDir = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\VC\]],
+            WindowsSdkDir = [[C:\Program Files (x86)\Windows Kits\10\]],
+            INCLUDE = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\include;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\ATLMFC\include;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\cppwinrt]],
+            ExtensionSdkDir = [[C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs]],
+            VSInstallDir = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\]],
+            VSCMD_VER = "18.5.0",
+            UCRTVersion = "10.0.26100.0",
+            DevEnvdir = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\]],
+            VCInstallDir = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\]],
+            VCToolsVersion = "14.50.35717",
+            VSCMD_ARG_app_plat = "Desktop",
+            WindowsSdkBinPath = [[C:\Program Files (x86)\Windows Kits\10\bin\]],
+            LIBPATH = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\ATLMFC\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.26100.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.26100.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319]],
+            LIB = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\ATLMFC\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64]],
+            WindowsLibPath = [[C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.26100.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.26100.0]],
+            VSCMD_ARG_TGT_ARCH = "x64",
+            VS180COMNTOOLS = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\Tools\]],
+            VCToolsRedistDir = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Redist\MSVC\14.50.35710\]],
+            VCToolsInstallDir = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\]],
+            UniversalCRTSdkDir = [[C:\Program Files (x86)\Windows Kits\10\]],
+            PATH = [[C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\VC\VCPackages;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\Extensions\Microsoft\CodeCoverage.Console;C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\\x64;C:\Program Files (x86)\Windows Kits\10\bin\\x64;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\Tools\;c:\Users\Iya Aja Gw Mah\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Iya Aja Gw Mah\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\Iya Aja Gw Mah\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;c:\program files (x86)\common files\intel\shared libraries\redist\intel64\compiler;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\lip;C:\Program Files\xmake;C:\Users\Iya Aja Gw Mah\scoop\shims;C:\Users\Iya Aja Gw Mah\AppData\Local\Microsoft\WindowsApps;C:\Users\Iya Aja Gw Mah\AppData\Local\spicetify;C:\Users\Iya Aja Gw Mah\.dotnet\tools;C:\Users\Iya Aja Gw Mah\.lmstudio\bin;C:\Users\Iya Aja Gw Mah\.dotnet\tools;C:\Users\Iya Aja Gw Mah\AppData\Local\Microsoft\WinGet\Links;C:\Users\Iya Aja Gw Mah\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\ucrt64\bin;;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\vcpkg]],
+            VSCMD_ARG_HOST_ARCH = "x64",
+            WindowsSdkVerBinPath = [[C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\]],
+            WindowsSDKVersion = "10.0.26100.0"
+        }
+    },
+    nim_arch_x64_plat_windows = {
+        __global = true,
+        __checked = false,
+        plat = "windows",
+        arch = "x64"
+    },
+    gfortran_arch_x64_plat_windows = {
+        __global = true,
+        __checked = true,
+        plat = "windows",
+        arch = "x64"
+    }
+}
